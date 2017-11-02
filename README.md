@@ -28,3 +28,25 @@ php bin/console security:check
 
 # run the project
 php bin/console server:run
+
+
+#console
+
+php bin/console debug:router
+
+
+# Twig
+
+twig.sensiolabs.org/documentation
+
+
+
+#symphony Console Command tutorial
+https://www.youtube.com/watch?v=5fChpCo-Zvc
+Create automated code
+php bin/console generate:command
+
+Bundle name;AppBundle
+Command name: app:setup-wallpapers
+did you confirm generation :yes
+
