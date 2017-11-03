@@ -31,11 +31,11 @@ class GreetCommand extends ContainerAwareCommand
    {
       $name = $input->getArgument('name');
       if ($name){
-         $text = 'Hello ' . $name;
+         $text = 'You have doing a great job :)  ' . $name;
       }
       else
       {
-         $text = 'Hello';
+         $text = 'Where is the name :(';
       }
 
       if ($input->getOption('yell')){

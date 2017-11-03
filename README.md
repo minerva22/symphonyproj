@@ -50,3 +50,7 @@ Bundle name;AppBundle
 Command name: app:setup-wallpapers
 did you confirm generation :yes
 
+
+# Wallpaper Setup Command Symfony Commands As a Service
+https://codereviewvideos.com/course/let-s-build-a-wallpaper-website-in-symfony-3/video/wallpaper-setup-command-part-1-symfony-commands-as-a-service
+

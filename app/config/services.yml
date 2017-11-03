@@ -4,10 +4,14 @@ parameters:
     #parameter_name: value
 
 services:
-    app.user_manager:
-       class: AppBundle\Service\UserManager
-       
-        
+    app.command.setup_wallpapers:
+       class: AppBundle\Command\SetupWallpapersCommand
+       tags:
+           -{name: console.command}
+    app.command.user_manager:
+       class: AppBundle\Command\CreateUserCommand
+       tags:
+           -{username: console.command}   
           
           
     # default configuration for services in *this* file

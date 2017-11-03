@@ -39,8 +39,12 @@ class CreateUserCommand extends ContainerAwareCommand
         '',
     ]);
 
-      // retrieve the argument value using getArgument()
-      $output->writeln('Username:'.$input->getArgument('username'));
+      $output->writeln('Username: '.$input->getArgument('username'));
+      // access the container using getContainer()
+      #  $userManager = $this->getContainer()->get('app.user_manager');
+        #$userManager->create($input->getArgument('username'));
+
+       # $output->writeln('User successfully generated!');
     
     }
 }
