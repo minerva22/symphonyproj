@@ -16,7 +16,7 @@ use AppBundle\Command\TreasuryFfa017Command;
 // php application.php app:hello-world
 
 //$command = new HelloWorldCommand();
-//$command1 = new CreateUserCommand();
+$command1 = new CreateUserCommand();
 //$command2 = new GreetCommand();
 
 
@@ -26,22 +26,24 @@ $commandtreasuryffai007 = new TreasuryFfa017Command();
 
 $application = new Application();
 //$application->add($command);
-//$application->add($command1);
+$application->add($command1);
 //$application->add($command2);
 
 //$application->setDefaultCommand($command->getName());
-//$application->setDefaultCommand($command1->getName());
+$application->setDefaultCommand($command1->getName());
 //$application->setDefaultCommand($command2->getName());
 
 
 $application->add($commandCashManagement);
 $application->add($commandPnL);
 $application->add($commandtreasuryffai007);
+$application->add($command1);
 
 
 $application->setDefaultCommand($commandCashManagement->getName());
 $application->setDefaultCommand($commandPnL->getName());
 $application->setDefaultCommand($commandtreasuryffai007->getName());
+$application->setDefaultCommand($command1->getName());
 
 
 $application->run();
